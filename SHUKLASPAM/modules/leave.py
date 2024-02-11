@@ -15,7 +15,7 @@ from telethon.tl.functions.channels import LeaveChannelRequest
 @X9.on(events.NewMessage(incoming=True, pattern=r"\%sleave(?: |$)(.*)" % hl))
 @X10.on(events.NewMessage(incoming=True, pattern=r"\%sleave(?: |$)(.*)" % hl))
 async def leave(e):
-    if e.sender_id in SUDO_USERS:
+    if e.sender_id in OWNER_ID:
 
         if len(e.text) > 7:
             event = await e.reply("» ʟᴇᴀᴠɪɴɢ...")
