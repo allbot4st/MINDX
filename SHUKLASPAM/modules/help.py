@@ -11,7 +11,7 @@ HELP_BUTTON = [
       Button.inline("𝗥𝗔𝗜𝗗", data="raid")
     ],
     [
-      Button.inline("𝗖𝗢𝗠𝗠𝗔𝗡𝗗𝗦", data="extra")
+      Button.inline("𝗘𝗫𝗧𝗥𝗔", data="extra")
     ],
     [
       Button.url("𝗦𝗛𝗜𝗩𝗔𝗡𝗦𝗛", "https://t.me/SHIVANSH39"),
