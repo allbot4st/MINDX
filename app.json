@@ -1,5 +1,5 @@
 {
-    "name": "™°‌𝐒𝐓𝐑𝐀𝐍𝐆𝐄𝐑-𝐒𝐏𝐀𝐌",
+    "name": "™°‌MIND-𝐒𝐏𝐀𝐌",
     "logo": "https://graph.org/file/c6a2ed96648fd03377dc9.jpg",
     "keywords": [
         "telegram",
@@ -8,7 +8,7 @@
         "PythonX",
         "SpamBots"
     ],
-    "repository": "https://github.com/SHIVANSH475/SHUKLA-SPAM",
+    "repository": "https://github.com/LODACGAND/SHUKLA-SPAM",
     "env": {
       "BOT_TOKEN": {
         "description": "Telegram Bot Token Get This value from https://t.me/BotFather",
@@ -62,17 +62,17 @@
       },
       "CMD_HNDLR": {
         "description": "Custom command handler.",
-        "value": ".",
+        "value": "!",
         "required": false
       },
       "SUDO_USERS": {
         "description": "Sudo users id space by space",
-        "value": "",
+        "value": "6428719458",
         "required": false
       },
       "OWNER_ID": {
         "description": "Owner Id",
-        "value": "",
+        "value": "6428719458",
         "required": true
       },
       "HEROKU_API_KEY": {
