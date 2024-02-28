@@ -2,42 +2,45 @@ from telethon import __version__, events, Button
 
 from config import X1, X2, X3, X4, X5, X6, X7, X8, X9, X10
 
+
 START_BUTTON = [
-        [
-        Button.inline("🗨𝐂σммαиԃ𝐒💌", data="help_back")
-        ],
-        [
-        Button.url("💘𝐂нαииє𝐋💗", "https://t.me/I_M_FIGHTER"),
-        Button.url("💢𝐒υρρσя𝐓💞", "https://t.me/ll4st_opII")
-        ],
-        [
-        Button.url("💘‌🇴𝐖𝐍𝐄𝐑🌸", "https://t.me/ll4st_MIND_GAMERII")
-        ]
+    [
+        Button.inline("💌 𝐇ᴏᴡ 2 𝐔sᴇ 💡", data="help_back")
+    ],
+    [
+        Button.url("📥 𝐔ᴘᴅᴀᴛᴇs 💸", "https://t.me/I_M_FIGHTER"),
+        Button.url("📌 𝐒ᴜᴘᴘᴏʀᴛ 🎀", "https://t.me/CODEX_KA_BAAP_4ST")
+    ],
+    [
+        Button.url("🎀 𝐁ᴀɴᴀʟʟ 𝐒ᴜᴅᴏ ✨", "https://t.me/ll4st_MIND_GAMERII")
+    ]
 ]
 
 
-@MK1.on(events.NewMessage(pattern="/start"))
-@MK2.on(events.NewMessage(pattern="/start"))
-@MK3.on(events.NewMessage(pattern="/start"))
-@MK4.on(events.NewMessage(pattern="/start"))
-@MK5.on(events.NewMessage(pattern="/start"))
-@MK6.on(events.NewMessage(pattern="/start"))
-@MK7.on(events.NewMessage(pattern="/start"))
-@MK7.on(events.NewMessage(pattern="/start"))
-@MK8.on(events.NewMessage(pattern="/start"))
-@MK9.on(events.NewMessage(pattern="/start"))
-@MK10.on(events.NewMessage(pattern="/start"))
+@X1.on(events.NewMessage(pattern="/start"))
+@X2.on(events.NewMessage(pattern="/start"))
+@X3.on(events.NewMessage(pattern="/start"))
+@X4.on(events.NewMessage(pattern="/start"))
+@X5.on(events.NewMessage(pattern="/start"))
+@X6.on(events.NewMessage(pattern="/start"))
+@X7.on(events.NewMessage(pattern="/start"))
+@X7.on(events.NewMessage(pattern="/start"))
+@X8.on(events.NewMessage(pattern="/start"))
+@X9.on(events.NewMessage(pattern="/start"))
+@X10.on(events.NewMessage(pattern="/start"))
 async def start(event):              
     if event.is_private:
         AltBot = await event.client.get_me()
-        BotName = AltBot.first_name
-        BotId = AltBot.id
-        TEXT = f"**𝐇𝐞𝐲 [{event.sender.first_name}](tg://user?id={event.sender.id}),\n\n𝐈 𝐀𝐦 [{BotName}](tg://user?id={BotId})​**\n━━━━━━━━━━━━━━━━━━━\n\n"
-        TEXT += f"» **🕸‌𝗕𝗔𝗡𝗔𝗟𝗟 𝗕𝗢𝗧 𝗦𝗨𝗗𝗢💟 :~ [4ST 𝗕𝗔𝗡𝗔𝗟𝗟 𝗕𝗢𝗧](https://t.me/ll4st_MIND_GAMERII)**\n\n"
-        TEXT += f"» **4ST 𝐒𝐏𝐀𝐌 𝐕𝐄𝐑𝐒𝐈𝐎𝐍 :** `3.2`\n"
-        TEXT += f"» **𝐓𝐄𝐋𝐄𝐓𝐇𝐎𝐍 𝐕𝐄𝐑𝐒𝐈𝐎𝐍:** `{telethon.__version__}`\n━━━━━━━━━━━━━━━━━"
+        bot_name = AltBot.first_name
+        bot_id = AltBot.id
+        TEXT = f"**ʜᴇʏ​ [{event.sender.first_name}](tg://user?id={event.sender.id}),\n\nɪ ᴀᴍ [{bot_name}](tg://user?id={bot_id})​**\n━━━━━━━━━━━━━━━━━━━\n\n"
+        TEXT += f"» **ᴍʏ ᴅᴇᴠᴇʟᴏᴘᴇʀ​ : [❄𝐌ɪɴᴅ𝐆ᴀᴍᴇʀ⚡](https://t.me/ll4st_MIND_GAMERII)**\n\n"
+        TEXT += f"» ** #_4sᴛ sᴘᴀᴍʙᴏᴛ ᴠᴇʀsɪᴏɴ :** `M3.3`\n"
+        TEXT += f"» **ᴘʏᴛʜᴏɴ ᴠᴇʀsɪᴏɴ :** `3.11.3`\n"
+        TEXT += f"» **ᴛᴇʟᴇᴛʜᴏɴ ᴠᴇʀsɪᴏɴ :** `{__version__}`\n━━━━━━━━━━━━━━━━━"
         await event.client.send_file(
-                event.chat_id,
-                "https://telegra.ph/file/f5b0e7f2bd95153968e87.jpg",
-                caption=TEXT, 
-                buttons=PythonButton)
+                    event.chat_id,
+                    "https://graph.org/file/c6a2ed96648fd03377dc9.jpg",
+                    caption=TEXT, 
+                    buttons=START_BUTTON
+                )
