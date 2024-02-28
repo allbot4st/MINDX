@@ -13,7 +13,7 @@ START_BUTTON = [
         [
         Button.url("💘‌🇴𝐖𝐍𝐄𝐑🌸", "https://t.me/ll4st_MIND_GAMERII")
         ]
-        ]
+]
 
 
 @MK1.on(events.NewMessage(pattern="/start"))
