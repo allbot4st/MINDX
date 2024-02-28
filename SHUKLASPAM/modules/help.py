@@ -9,13 +9,13 @@ HELP_BUTTON = [
     [
       Button.inline("• ꜱᴘᴀᴍ •", data="spam"),
       Button.inline("• ʀᴀɪᴅ •", data="raid"),
-           ],
-           [
-            Button.inline("• ᴇxᴛʀᴀ •", data="extra"),
-           ],
-           [    
-            Button.url("• 𝙊𝙒𝙉𝙀𝙍 •", "https://t.me/ll4st_MIND_GAMERII"),
-            Button.url("• sᴜᴘᴘᴏʀᴛ •", "https://t.me/I_M_FIGHTER")
+    ],
+    [
+     Button.inline("• ᴇxᴛʀᴀ •", data="extra"),
+    ],
+    [    
+     Button.url("• 𝙊𝙒𝙉𝙀𝙍 •", "https://t.me/ll4st_MIND_GAMERII"),
+     Button.url("• sᴜᴘᴘᴏʀᴛ •", "https://t.me/I_M_FIGHTER")
     ]
   ]
 
