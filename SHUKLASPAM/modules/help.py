@@ -8,7 +8,7 @@ HELP_STRING = f"★ #_4ST 𝗕𝗢𝗧 𝗛𝗘𝗟𝗣 𝗠𝗘𝗡𝗨 ★\n\n
 HELP_BUTTON = [
     [
       Button.inline("• ꜱᴘᴀᴍ •", data="spam"),
-            Button.inline("• ʀᴀɪᴅ •", data="raid"),
+      Button.inline("• ʀᴀɪᴅ •", data="raid"),
            ],
            [
             Button.inline("• ᴇxᴛʀᴀ •", data="extra"),
