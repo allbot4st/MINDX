@@ -1,202 +1,196 @@
+from config import MK1, MK2, MK3, MK4, MK5, MK6, MK7, MK8, MK9, MK10, SUDO_USERS, CMD_HNDLR as hl
 from telethon import events, Button
 
-from config import X1, X2, X3, X4, X5, X6, X7, X8, X9, X10, SUDO_USERS, CMD_HNDLR as hl
+
+PythonHelp = f"💘4ST 𝘀𝗽𝗮𝗺 𝙃𝙚𝙡𝙥 𝙈𝙚𝙣𝙪💚\n\n» **ᴄʟɪᴄᴋ ᴏɴ ʙᴇʟᴏᴡ ʙᴜᴛᴛᴏɴꜱ ꜰᴏʀ ʜᴇʟᴘ**\n» **ᴅᴇᴠᴇʟᴏᴘᴇʀ: @ll4st_MIND_GAMERII**"
 
 
-HELP_STRING = f"★ 𝗦𝗧𝗥𝗔𝗡𝗚𝗘𝗥 𝗕𝗢𝗧 𝗛𝗘𝗟𝗣 𝗠𝗘𝗡𝗨 ★\n\n» **ᴄʟɪᴄᴋ ᴏɴ ʙᴇʟᴏᴡ ʙᴜᴛᴛᴏɴ ғᴏʀ ʜᴇʟᴘ**\n» **ᴅᴇᴠᴇʟᴏᴘᴇʀ: @SHIVANSH39**"
-
-HELP_BUTTON = [
-    [
-      Button.inline("𝗦𝗣𝗔𝗠", data="spam"),
-      Button.inline("𝗥𝗔𝗜𝗗", data="raid")
-    ],
-    [
-      Button.inline("𝗘𝗫𝗧𝗥𝗔", data="extra")
-    ],
-    [
-      Button.url("𝗦𝗛𝗜𝗩𝗔𝗡𝗦𝗛", "https://t.me/SHIVANSH39"),
-      Button.url("𝗦𝗨𝗣𝗣𝗢𝗥𝗧", "https://t.me/MASTIWITHFRIENDSX")
-    ]
-  ]
-
-
-@X1.on(events.NewMessage(incoming=True, pattern=r"\%shelp(?: |$)(.*)" % hl))
-@X2.on(events.NewMessage(incoming=True, pattern=r"\%shelp(?: |$)(.*)" % hl))
-@X3.on(events.NewMessage(incoming=True, pattern=r"\%shelp(?: |$)(.*)" % hl))
-@X4.on(events.NewMessage(incoming=True, pattern=r"\%shelp(?: |$)(.*)" % hl))
-@X5.on(events.NewMessage(incoming=True, pattern=r"\%shelp(?: |$)(.*)" % hl))
-@X6.on(events.NewMessage(incoming=True, pattern=r"\%shelp(?: |$)(.*)" % hl))
-@X7.on(events.NewMessage(incoming=True, pattern=r"\%shelp(?: |$)(.*)" % hl))
-@X8.on(events.NewMessage(incoming=True, pattern=r"\%shelp(?: |$)(.*)" % hl))
-@X9.on(events.NewMessage(incoming=True, pattern=r"\%shelp(?: |$)(.*)" % hl))
-@X10.on(events.NewMessage(incoming=True, pattern=r"\%shelp(?: |$)(.*)" % hl))
+@MK1.on(events.NewMessage(incoming=True, pattern=r"\%shelp(?: |$)(.*)" % hl))
+@MK2.on(events.NewMessage(incoming=True, pattern=r"\%shelp(?: |$)(.*)" % hl))
+@MK3.on(events.NewMessage(incoming=True, pattern=r"\%shelp(?: |$)(.*)" % hl))
+@MK4.on(events.NewMessage(incoming=True, pattern=r"\%shelp(?: |$)(.*)" % hl))
+@MK5.on(events.NewMessage(incoming=True, pattern=r"\%shelp(?: |$)(.*)" % hl))
+@MK6.on(events.NewMessage(incoming=True, pattern=r"\%shelp(?: |$)(.*)" % hl))
+@MK7.on(events.NewMessage(incoming=True, pattern=r"\%shelp(?: |$)(.*)" % hl))
+@MK8.on(events.NewMessage(incoming=True, pattern=r"\%shelp(?: |$)(.*)" % hl))
+@MK9.on(events.NewMessage(incoming=True, pattern=r"\%shelp(?: |$)(.*)" % hl))
+@MK10.on(events.NewMessage(incoming=True, pattern=r"\%shelp(?: |$)(.*)" % hl))
 async def help(event):
     if event.sender_id in SUDO_USERS:
-        try:
-          await event.client.send_file(event.chat_id,
-              "https://graph.org/file/c6a2ed96648fd03377dc9.jpg",
-              caption=HELP_STRING,
-              buttons=HELP_BUTTON
-              )
-        except Exception as e:
-            await event.client.send_message(event.chat_id, f"An Exception Occured!\n\n**ERROR:** {str(e)}")
+       await event.client.send_file(event.chat_id,
+                                  " https://telegra.ph/file/f5b0e7f2bd95153968e87.jpg",
+                                  caption=PythonHelp,
+                                  buttons=[
+           [
+            Button.inline("• ꜱᴘᴀᴍ •", data="spam"),
+            Button.inline("• ʀᴀɪᴅ •", data="raid"),
+           ],
+           [
+            Button.inline("• ᴇxᴛʀᴀ •", data="extra"),
+           ],
+           [    
+            Button.url("• 𝙊𝙒𝙉𝙀𝙍 •", "https://t.me/@ll4st_MIND_GAMERII"),
+            Button.url("• sᴜᴘᴘᴏʀᴛ •", "https://t.me/I_M_FIGHTER")
+           ],
+           ],
+           )
 
 
 extra_msg = f"""
-**» ᴇxᴛʀᴀ  ᴄᴏᴍᴍᴀɴᴅs:**
+**» ᴇxᴛʀᴀ ᴄᴏᴍᴍᴀɴᴅꜱ:**
 
-🌺 𝗨𝘀𝗲𝗿𝗕𝗼𝘁: **💘ᴜsᴇʀʙᴏᴛ ᴄᴍᴅs💘**
-  1) {hl}𝙿𝚒𝚗𝚐
-  2) {hl}reb𝚘𝚘𝚝
-  3) {hl}𝚂𝚞𝚍𝚘 <𝚛𝚎𝚙𝚕𝚢 𝚝𝚘 𝚞𝚜𝚎𝚛>  --> Owner Cmd
-  4) {hl}𝚕𝚘𝚐𝚜 --> Owner Cmd
+𝗨𝘀𝗲𝗿𝗕𝗼𝘁: ᴜꜱᴇʀʙᴏᴛ ᴄᴍᴅꜱ
+  1) {hl}ping 
+  2) {hl}reboot
+  3) {hl}sudo <reply to user>  --> Owner Cmd
+  4) {hl}logs --> Owner Cmd
 
-💫 𝗘𝗰𝗵𝗼: **🌸ᴛᴏ ᴀᴄᴛɪᴠᴇ ᴇᴄʜᴏ ᴏɴ ᴀɴʏ ᴜsᴇʀ🌸**
-  1) {hl}𝚎𝚌𝚑𝚘 <𝚛𝚎𝚙𝚕𝚢 𝚝𝚘 𝚞𝚜𝚎𝚛>
-  2) {hl}𝚛𝚖𝚎𝚌𝚑𝚘 <𝚛𝚎𝚙𝚕𝚢 𝚝𝚘 𝚞𝚜𝚎𝚛>
+𝗘𝗰𝗵𝗼: ᴛᴏ ᴀᴄᴛɪᴠᴇ ᴇᴄʜᴏ ᴏɴ ᴀɴʏ ᴜꜱᴇʀ
+  1) {hl}echo <reply to user>
+  2) {hl}rmecho <reply to user>
 
-❤️‍🔥 𝗟𝗲𝗮𝘃𝗲: **🍁ᴛᴏ ʟᴇᴀᴠᴇ ɢʀᴏᴜᴘ/ᴄʜᴀɴɴᴇʟ🍁**
-  1) {hl}𝚕𝚎𝚊𝚟𝚎 <𝚐𝚛𝚘𝚞𝚙/𝚌𝚑𝚊𝚝 𝚒𝚍>
-  2) {hl}𝚕𝚎𝚊𝚟𝚎 : 𝚃𝚢𝚙𝚎 𝚒𝚗 𝚝𝚑𝚛 𝙶𝚛𝚘𝚞𝚘 𝚋𝚘𝚝 𝚠𝚒𝚕𝚕 𝚊𝚞𝚝𝚘 𝚕𝚎𝚊𝚟𝚎 𝚝𝚑𝚊𝚝 𝚐𝚛𝚘𝚞𝚙 
+𝗟𝗲𝗮𝘃𝗲: ᴛᴏ ʟᴇᴀᴠᴇ ɢʀᴏᴜᴘ/ᴄʜᴀɴɴᴇʟ
+  1) {hl}leave <group/chat id>
+  2) {hl}leave : Type in the Group bot will auto leave that group
 
 
-**© @SHIVANSH39**
+**© @ll4st_MIND_GAMERII**
 """
 
                  
 raid_msg = f"""
-**» ʀᴀɪᴅ ᴄᴏᴍᴍᴀɴᴅs:**
+**» ʀᴀɪᴅ ᴄᴏᴍᴍᴀɴᴅꜱ:**
 
-💘 𝗥𝗮𝗶𝗱: **🌟ᴀᴄᴛɪᴠᴀᴛᴇs ʀᴀɪᴅ ᴏɴ ᴀɴʏ ɪɴᴅɪᴠɪᴅᴜᴀʟ ᴜsᴇʀ ғᴏʀ ɢɪᴠᴇɴ ʀᴀɴɢᴇ🌟**
-  1) {hl}𝚛𝚊𝚒𝚍 <𝚌𝚘𝚞𝚗𝚝> <𝚞𝚜𝚎𝚛𝚗𝚊𝚖𝚎>
-  2) {hl}𝚛𝚊𝚒𝚍 <𝚌𝚘𝚞𝚗𝚝> <𝚛𝚎𝚙𝚕𝚢 𝚝𝚘 𝚞𝚜𝚎𝚛>
+𝗥𝗮𝗶𝗱: ᴀᴄᴛɪᴠᴀᴛᴇꜱ ʀᴀɪᴅ ᴏɴ ᴀɴʏ ɪɴᴅɪᴠɪᴅᴜᴀʟ ᴜꜱᴇʀ ꜰᴏʀ ɢɪᴠᴇɴ ʀᴀɴɢᴇ.
+  1) {hl}raid <count> <username>
+  2) {hl}raid <count> <reply to user>
 
-💖 𝗥𝗲𝗽𝗹𝘆𝗥𝗮𝗶𝗱: **✨ᴀᴄᴛɪᴠᴀᴛᴇs ʀᴇᴘʟʏ ʀᴀɪᴅ ᴏɴ ᴛʜᴇ ᴜsᴇʀ✨**
-  1) {hl}𝚛𝚛𝚊𝚒𝚍 <𝚛𝚎𝚙𝚕𝚢𝚒𝚗𝚐 𝚝𝚘 𝚞𝚜𝚎𝚛>
-  2) {hl}𝚛𝚛𝚊𝚒𝚍 <𝚞𝚜𝚎𝚛𝚗𝚊𝚖𝚛>
+𝗥𝗲𝗽𝗹𝘆𝗥𝗮𝗶𝗱: ᴀᴄᴛɪᴠᴀᴛᴇꜱ ʀᴇᴘʟʏ ʀᴀɪᴅ ᴏɴ ᴛʜᴇ ᴜꜱᴇʀ!!
+  1) {hl}rraid <replying to user>
+  2) {hl}rraid <username>
 
-🌺 𝗗𝗥𝗲𝗽𝗹𝘆𝗥𝗮𝗶𝗱: **🍁ᴅᴇᴀᴄᴛɪᴠᴀᴛᴇs ʀᴇᴘʟʏ ʀᴀɪᴅ ᴏɴ ᴛʜᴇ ᴜsᴇʀ🍁**
-  1) {hl}𝚍𝚛𝚛𝚊𝚒𝚍 <𝚛𝚎𝚙𝚕𝚢𝚒𝚗𝚐 𝚝𝚘 𝚞𝚜𝚎𝚛>
-  2) {hl}drraid <𝚞𝚜𝚎𝚛𝚗𝚊𝚖𝚎>
+𝗗𝗥𝗲𝗽𝗹𝘆𝗥𝗮𝗶𝗱: ᴅᴇᴀᴄᴛɪᴠᴀᴛᴇꜱ ʀᴇᴘʟʏ ʀᴀɪᴅ ᴏɴ ᴛʜᴇ ᴜꜱᴇʀ!!
+  1) {hl}drraid <replying to user>
+  2) {hl}drraid <username>
 
-🌟 𝐌𝐑𝐚𝐢𝐝: **❤️‍🔥ʟᴏᴠᴇ ʀᴀɪᴅ ᴏɴ ᴛʜᴇ ᴜsᴇʀ❤️‍🔥**
-  1) {hl}𝚖𝚛𝚊𝚒𝚍 <𝚌𝚘𝚞𝚗𝚝> <𝚞𝚜𝚎𝚛𝚗𝚊𝚖𝚎>
-  2) {hl}𝚖𝚛𝚊𝚒𝚍 <𝚌𝚘𝚞𝚗𝚝> <𝚛𝚎𝚙𝚕𝚢 𝚝𝚘 𝚞𝚜𝚎𝚛>
+𝐌𝐑𝐚𝐢𝐝: ʟᴏᴠᴇ ʀᴀɪᴅ ᴏɴ ᴛʜᴇ ᴜꜱᴇʀ!!
+  1) {hl}mraid <count> <username>
+  2) {hl}mraid <count> <reply to user>
 
-💖 𝐒𝐑𝐚𝐢𝐝: **💫sʜʏʀɪ ʀᴀɪᴅ ᴏɴ ᴛʜᴇ ᴜsᴇʀ💫**
-  1) {hl}𝚜𝚛𝚊𝚒𝚍 <𝚌𝚘𝚞𝚗𝚝> <username>
-  2) {hl}𝚜𝚛𝚊𝚒𝚍 <𝚌𝚘𝚞𝚗𝚝> <𝚛𝚎𝚙𝚕𝚢 𝚝𝚘 𝚞𝚜𝚎𝚛>
+𝐒𝐑𝐚𝐢𝐝: ꜱʜᴀʏᴀʀɪ ʀᴀɪᴅ ᴏɴ ᴛʜᴇ ᴜꜱᴇʀ!!
+  1) {hl}sraid <count> <username>
+  2) {hl}sraid <count> <reply to user>
 
-💘 𝐂𝐑𝐚𝐢𝐝: **🍁ᴀʙᴄᴅ ʀᴀɪᴅ ᴏɴ ᴛʜᴇ ᴜsᴇʀ🍁**
-  1) {hl}𝚌𝚛𝚊𝚒𝚍 <𝚌𝚘𝚞𝚗𝚝> <𝚞𝚜𝚎𝚛𝚗𝚊𝚖𝚎>
-  2) {hl}𝚌𝚛𝚊𝚒𝚍 <𝚌𝚘𝚞𝚗𝚝> <𝚛𝚎𝚙𝚕𝚢 𝚝𝚘 𝚞𝚜𝚎𝚛>
+𝐂𝐑𝐚𝐢𝐝: ᴀʙᴄᴅ ʀᴀɪᴅ ᴏɴ ᴛʜᴇ ᴜꜱᴇʀ!!
+  1) {hl}craid <count> <username>
+  2) {hl}craid <count> <reply to user>
 
 
-**© @SHIVANSH39**💘
+**© @ll4st_MIND_GAMERII**
 """
 
 spam_msg = f"""
-**» sᴘᴀᴍ ᴄᴏᴍᴍᴀɴᴅs:**
+**» ꜱᴘᴀᴍ ᴄᴏᴍᴍᴀɴᴅꜱ:**
 
-🌺 𝗦𝗽𝗮𝗺: **❤️‍🔥sᴘᴀᴍs ᴀ ᴍᴇssᴀɢᴇ❤️‍🔥**
-  1) {hl}𝚂𝚙𝚊𝚖 <𝚌𝚘𝚞𝚗𝚝> <𝚖𝚎𝚜𝚜𝚊𝚐𝚎 𝚝𝚘 𝚜𝚙𝚊𝚖> (𝚢𝚘𝚞 𝚌𝚊𝚗 𝚛𝚎𝚙𝚕𝚢 𝚊𝚗𝚢 𝚖𝚎𝚜𝚜𝚊𝚐𝚎 𝚒𝚏 𝚢𝚘𝚞 𝚠𝚊𝚗𝚝 𝚋𝚘𝚝 𝚝𝚘 𝚛𝚎𝚙𝚕𝚢 𝚝𝚑𝚊𝚝 𝚖𝚎𝚜𝚜𝚊𝚐𝚎 𝚊𝚗𝚍 𝚍𝚘 𝚜𝚙𝚊𝚖𝚖𝚒𝚗𝚐)
-  2) {hl}𝚜𝚙𝚊𝚖 <𝚌𝚘𝚞𝚗𝚝> <𝚛𝚎𝚙𝚕𝚢𝚒𝚗𝚐 𝚊𝚗𝚢 𝚖𝚎𝚜𝚜𝚊𝚐𝚎>
+𝗦𝗽𝗮𝗺: ꜱᴘᴀᴍꜱ ᴀ ᴍᴇꜱꜱᴀɢᴇ.
+  1) {hl}spam <count> <message to spam> (you can reply any message if you want bot to reply that message and do spamming)
+  2) {hl}spam <count> <replying any message>
 
-💖 𝗣𝗼𝗿𝗻𝗦𝗽𝗮𝗺: **🍁ᴘᴏʀɴᴏɢʀᴀᴘʜʏ  sᴘᴀᴍ🍁**
-  1) {hl}𝙿𝚜𝚙𝚊𝚖 <𝚌𝚘𝚞𝚗𝚝>
+𝗣𝗼𝗿𝗻𝗦𝗽𝗮𝗺: ᴘᴏʀᴍᴏɢʀᴀᴘʜʏ ꜱᴘᴀᴍ.
+  1) {hl}pspam <count>
 
-🌸 𝗛𝗮𝗻𝗴: **🌺sᴘᴀᴍs ʜᴀɴɢ ᴍᴇssᴀɢᴇ ғᴏʀ ɢɪᴠᴇɴ ᴄᴏᴜɴᴛᴇʀs🌺**
-  1) {hl}𝚑𝚊𝚗𝚐 <𝚌𝚘𝚞𝚗𝚝𝚎𝚛>
+𝗛𝗮𝗻𝗴: ꜱᴘᴀᴍꜱ ʜᴀɴɢɪɴɢ ᴍᴇꜱꜱᴀɢᴇ ꜰᴏʀ ɢɪᴠᴇɴ ᴄᴏᴜɴᴛᴇʀ.
+  1) {hl}hang <counter> (you can reply any message if you want bot to reply that message and do spamming)
 
 
-** © @SHIVANSH39**
+** © @ll4st_MIND_GAMERII**
 """                     
            
            
-@X1.on(events.CallbackQuery(pattern=r"help_back"))
-@X2.on(events.CallbackQuery(pattern=r"help_back"))
-@X3.on(events.CallbackQuery(pattern=r"help_back"))
-@X4.on(events.CallbackQuery(pattern=r"help_back"))
-@X5.on(events.CallbackQuery(pattern=r"help_back"))
-@X6.on(events.CallbackQuery(pattern=r"help_back"))
-@X7.on(events.CallbackQuery(pattern=r"help_back"))
-@X8.on(events.CallbackQuery(pattern=r"help_back"))
-@X9.on(events.CallbackQuery(pattern=r"help_back"))
-@X10.on(events.CallbackQuery(pattern=r"help_back"))
+@MK1.on(events.CallbackQuery(pattern=r"help_back"))
+@MK2.on(events.CallbackQuery(pattern=r"help_back"))
+@MK3.on(events.CallbackQuery(pattern=r"help_back"))
+@MK4.on(events.CallbackQuery(pattern=r"help_back"))
+@MK5.on(events.CallbackQuery(pattern=r"help_back"))
+@MK6.on(events.CallbackQuery(pattern=r"help_back"))
+@MK7.on(events.CallbackQuery(pattern=r"help_back"))
+@MK8.on(events.CallbackQuery(pattern=r"help_back"))
+@MK9.on(events.CallbackQuery(pattern=r"help_back"))
+@MK10.on(events.CallbackQuery(pattern=r"help_back"))
 async def helpback(event):
-    if event.query.user_id in SUDO_USERS:    
-        await event.edit(
-            HELP_STRING,
+   if event.query.user_id in SUDO_USERS:    
+      await event.edit(
+            PythonHelp,
             buttons=[
-              [
-                Button.inline("𝗦𝗣𝗔𝗠", data="spam"),
-                Button.inline("𝗥𝗔𝗜𝗗", data="raid")
-              ],
-              [
-                Button.inline("𝗖𝗢𝗠𝗠𝗔𝗡𝗗𝗦", data="extra")
-              ],
-              [
-                Button.url("𝗦𝗛𝗜𝗩𝗔𝗡𝗦𝗛", "https://t.me/SHIVANSH39"),
-                Button.url("𝗠𝗬 𝗚𝗥𝗢𝗨𝗣", "https://t.me/MASTIWITHFRIENDSX")
-              ]
-            ]
-          )
-    else:
-        await event.answer("𝗣ᴀʜʟᴇ 𝗝ᴀᴀᴋᴇ 𝗣ᴀᴘᴀ 𝗕ᴏʟ ⚡️𝐒𝐇𝐈𝐕𝐀𝐍𝐒𝐇⚡️ 𝗞ᴏ 𝗪ᴏ 𝗧ᴜᴍʜᴇ 𝗦ᴜᴅᴏ 𝗗ᴇ 𝗗ᴇɢᴀ" , cache_time=0, alert=True)
+           [
+            Button.inline("• ꜱᴘᴀᴍ •", data="spam"),
+            Button.inline("• ʀᴀɪᴅ •", data="raid"),
+           ],
+           [
+            Button.inline("• ᴇxᴛʀᴀ •", data="extra"),
+           ],
+           [
+            Button.url("• 𝐎𝐖𝐍𝐄𝐑 •", "https://t.me/ll4st_MIND_GAMERII"),
+            Button.url("• sᴜᴘᴘᴏʀᴛ •", "https://t.me/I_M_FIGHTER")
+           ],
+           ],
+        )           
+   else:
+        await event.answer("Pahle jaake baap bol @ll4st_MIND_GAMERII ko wo tumhe sudo de dega", cache_time=0, alert=True)
 
 
-@X1.on(events.CallbackQuery(pattern=r"spam"))
-@X2.on(events.CallbackQuery(pattern=r"spam"))
-@X3.on(events.CallbackQuery(pattern=r"spam"))
-@X4.on(events.CallbackQuery(pattern=r"spam"))
-@X5.on(events.CallbackQuery(pattern=r"spam"))
-@X6.on(events.CallbackQuery(pattern=r"spam"))
-@X7.on(events.CallbackQuery(pattern=r"spam"))
-@X8.on(events.CallbackQuery(pattern=r"spam"))
-@X9.on(events.CallbackQuery(pattern=r"spam"))
-@X10.on(events.CallbackQuery(pattern=r"spam"))
+@MK1.on(events.CallbackQuery(pattern=r"spam"))
+@MK2.on(events.CallbackQuery(pattern=r"spam"))
+@MK3.on(events.CallbackQuery(pattern=r"spam"))
+@MK4.on(events.CallbackQuery(pattern=r"spam"))
+@MK5.on(events.CallbackQuery(pattern=r"spam"))
+@MK6.on(events.CallbackQuery(pattern=r"spam"))
+@MK7.on(events.CallbackQuery(pattern=r"spam"))
+@MK8.on(events.CallbackQuery(pattern=r"spam"))
+@MK9.on(events.CallbackQuery(pattern=r"spam"))
+@MK10.on(events.CallbackQuery(pattern=r"spam"))
 async def help_spam(event):
-    if event.query.user_id in SUDO_USERS:    
-        await event.edit(spam_msg,
-              buttons=[[Button.inline("< Back", data="help_back"),],],
-              ) 
-    else:
-        await event.answer("𝗣ᴀʜʟᴇ 𝗝ᴀᴀᴋᴇ 𝗣ᴀᴘᴀ 𝗕ᴏʟ ⚡️𝐒𝐇𝐈𝐕𝐀𝐍𝐒𝐇⚡️ 𝗞ᴏ 𝗪ᴏ 𝗧ᴜᴍʜᴇ 𝗦ᴜᴅᴏ 𝗗ᴇ 𝗗ᴇɢᴀ", cache_time=0, alert=True)
+   if event.query.user_id in SUDO_USERS:    
+       await event.edit(spam_msg,
+            buttons=[[Button.inline("< Back", data="help_back"),],],
+            ) 
+   else:
+        await event.answer("Pahle jaake baap bol @ll4st_MIND_GAMERII ko wo tumhe sudo de dega", cache_time=0, alert=True)
 
 
-@X1.on(events.CallbackQuery(pattern=r"raid"))
-@X2.on(events.CallbackQuery(pattern=r"raid"))
-@X3.on(events.CallbackQuery(pattern=r"raid"))
-@X4.on(events.CallbackQuery(pattern=r"raid"))
-@X5.on(events.CallbackQuery(pattern=r"raid"))
-@X6.on(events.CallbackQuery(pattern=r"raid"))
-@X7.on(events.CallbackQuery(pattern=r"raid"))
-@X8.on(events.CallbackQuery(pattern=r"raid"))
-@X9.on(events.CallbackQuery(pattern=r"raid"))
-@X10.on(events.CallbackQuery(pattern=r"raid"))
+@MK1.on(events.CallbackQuery(pattern=r"raid"))
+@MK2.on(events.CallbackQuery(pattern=r"raid"))
+@MK3.on(events.CallbackQuery(pattern=r"raid"))
+@MK4.on(events.CallbackQuery(pattern=r"raid"))
+@MK5.on(events.CallbackQuery(pattern=r"raid"))
+@MK6.on(events.CallbackQuery(pattern=r"raid"))
+@MK7.on(events.CallbackQuery(pattern=r"raid"))
+@MK8.on(events.CallbackQuery(pattern=r"raid"))
+@MK9.on(events.CallbackQuery(pattern=r"raid"))
+@MK10.on(events.CallbackQuery(pattern=r"raid"))
 async def help_raid(event):
-    if event.query.user_id in SUDO_USERS:
+     if event.query.user_id in SUDO_USERS:
         await event.edit(raid_msg,
             buttons=[[Button.inline("< Back", data="help_back"),],],
-          )
-    else:
-        await event.answer("𝗣ᴀʜʟᴇ 𝗝ᴀᴀᴋᴇ 𝗣ᴀᴘᴀ 𝗕ᴏʟ ⚡️𝐒𝐇𝐈𝐕𝐀𝐍𝐒𝐇⚡️ 𝗞ᴏ 𝗪ᴏ 𝗧ᴜᴍʜᴇ 𝗦ᴜᴅᴏ 𝗗ᴇ 𝗗ᴇɢᴀ", cache_time=0, alert=True)
+            )  
+     else:
+        await event.answer("Pahle jaake baap bol @ll4st_MIND_GAMERII ko wo tumhe sudo de dega", cache_time=0, alert=True)
 
 
-@X1.on(events.CallbackQuery(pattern=r"extra"))
-@X2.on(events.CallbackQuery(pattern=r"extra"))
-@X3.on(events.CallbackQuery(pattern=r"extra"))
-@X4.on(events.CallbackQuery(pattern=r"extra"))
-@X5.on(events.CallbackQuery(pattern=r"extra"))
-@X6.on(events.CallbackQuery(pattern=r"extra"))
-@X7.on(events.CallbackQuery(pattern=r"extra"))
-@X8.on(events.CallbackQuery(pattern=r"extra"))
-@X9.on(events.CallbackQuery(pattern=r"extra"))
-@X10.on(events.CallbackQuery(pattern=r"extra"))
+@MK1.on(events.CallbackQuery(pattern=r"extra"))
+@MK2.on(events.CallbackQuery(pattern=r"extra"))
+@MK3.on(events.CallbackQuery(pattern=r"extra"))
+@MK4.on(events.CallbackQuery(pattern=r"extra"))
+@MK5.on(events.CallbackQuery(pattern=r"extra"))
+@MK6.on(events.CallbackQuery(pattern=r"extra"))
+@MK7.on(events.CallbackQuery(pattern=r"extra"))
+@MK8.on(events.CallbackQuery(pattern=r"extra"))
+@MK9.on(events.CallbackQuery(pattern=r"extra"))
+@MK10.on(events.CallbackQuery(pattern=r"extra"))
 async def help_extra(event):
-    if event.query.user_id in SUDO_USERS:
+   if event.query.user_id in SUDO_USERS:
         await event.edit(extra_msg,
             buttons=[[Button.inline("< Back", data="help_back"),],],
             )
-    else:
-        await event.answer("𝗣ᴀʜʟᴇ 𝗝ᴀᴀᴋᴇ 𝗣ᴀᴘᴀ 𝗕ᴏʟ ⚡️𝐒𝐇𝐈𝐕𝐀𝐍𝐒𝐇⚡️ 𝗞ᴏ 𝗪ᴏ 𝗧ᴜᴍʜᴇ 𝗦ᴜᴅᴏ 𝗗ᴇ 𝗗ᴇɢᴀ", cache_time=0, alert=True)
+   else:
+        await event.answer("Pahle jaake baap bol @ll4st_MIND_GAMERII ko wo tumhe sudo de dega", cache_time=0, alert=True)
